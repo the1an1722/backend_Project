@@ -7,22 +7,22 @@ This project includes three fundamental Java data structure examples: Stack, Arr
 
 ### Project Overview
 
-Stack is a classic stack data structure example written in Java. It allows users to perform the following operations:
+Stack is a classic Exercises.stack data structure example written in Java. It allows users to perform the following operations:
 
-- Push elements onto the stack
-- Pop elements from the stack
-- View the current stack content
+- Push elements onto the Exercises.stack
+- Pop elements from the Exercises.stack
+- View the current Exercises.stack content
 
 ### How to Use
 
 1. Run the `InteractiveStack` class's `main` method.
 
 2. Follow the prompts and input one of the following commands:
-   - Enter an element to push onto the stack.
-   - Enter "remove" to pop an element from the stack.
+   - Enter an element to push onto the Exercises.stack.
+   - Enter "remove" to pop an element from the Exercises.stack.
    - Enter "exit" to exit the program.
 
-3. The program will display the current stack content after each operation.
+3. The program will display the current Exercises.stack content after each operation.
 
 4. When exiting the program, it will display "Program has exited."
 
@@ -53,24 +53,24 @@ ArrayList is a dynamic array example written in Java. It allows users to perform
 
 ### Project Overview
 
-Tree is a binary tree example written in Java. It allows users to perform the following operations:
+Tree is a binary Exercises.tree example written in Java. It allows users to perform the following operations:
 
-- Add values to the binary tree
-- Remove values from the binary tree
-- View the current binary tree content
+- Add values to the binary Exercises.tree
+- Remove values from the binary Exercises.tree
+- View the current binary Exercises.tree content
 
 ### How to Use
 
 1. Run the `InteractiveBinaryTree` class's `main` method.
 
 2. Follow the prompts and input one of the following commands:
-   - Enter a value to add to the binary tree.
-   - Enter "delete" to delete a value from the binary tree.
+   - Enter a value to add to the binary Exercises.tree.
+   - Enter "delete" to delete a value from the binary Exercises.tree.
    - Enter "exit" to exit the program.
 
 3. If choosing "delete," you will be prompted to enter the integer value to delete.
 
-4. The program will display the current state of the binary tree (in-order traversal result) after each operation.
+4. The program will display the current state of the binary Exercises.tree (in-order traversal result) after each operation.
 
 5. When exiting the program, it will display "Program has exited."
 

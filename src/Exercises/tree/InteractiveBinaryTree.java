@@ -1,4 +1,4 @@
-package treeNode;
+package Exercises.tree;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ class TreeNode {
 }
 
 public class InteractiveBinaryTree {
-    //  Insert a new value into the binary tree
+    //  Insert a new value into the binary Exercises.tree
     //将新值插入二叉树
     public static TreeNode insert(TreeNode root, int value) {
         if (root == null) {
@@ -36,7 +36,7 @@ public class InteractiveBinaryTree {
         return root;
     }
 
-    // Search for a value in the binary tree
+    // Search for a value in the binary Exercises.tree
     // 在二叉树中搜索一个值
     public static TreeNode search(TreeNode root, int value) {
         if (root == null || root.value == value) {
@@ -57,11 +57,11 @@ public class InteractiveBinaryTree {
             return root;
         }
 
-        // Check if the value to delete exists in the tree
+        // Check if the value to delete exists in the Exercises.tree
         // 检查要删除的值是否存在于树中
         TreeNode nodeToDelete = search(root, valueToDelete);
         if (nodeToDelete == null) {
-            System.out.println("Value " + valueToDelete + " does not exist in the tree. Cannot delete.");
+            System.out.println("Value " + valueToDelete + " does not exist in the Exercises.tree. Cannot delete.");
             return root;
         }
 
@@ -97,7 +97,7 @@ public class InteractiveBinaryTree {
         return root;
     }
 
-    // Find the maximum value in the binary tree
+    // Find the maximum value in the binary Exercises.tree
     // 查找二叉树中的最大值
     public static int maxValue(TreeNode node) {
         int maxValue = node.value;
@@ -108,7 +108,7 @@ public class InteractiveBinaryTree {
         return maxValue;
     }
 
-    // Find the minimum value in the binary tree
+    // Find the minimum value in the binary Exercises.tree
     // 查找二叉树中的最小值
     public static int minValue(TreeNode node) {
         int minValue = node.value;
@@ -135,36 +135,36 @@ public class InteractiveBinaryTree {
 
         System.out.println("Interactive Binary Tree Example");
         while (true) {
-            System.out.print("Enter a value to add to the binary tree, 'delete' to remove a value, or 'exit' to quit: ");
+            System.out.print("Enter a value to add to the binary Exercises.tree, 'delete' to remove a value, or 'exit' to quit: ");
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("exit")) {
                 break;
             } else if (input.equalsIgnoreCase("delete")) {
-                System.out.print("Enter a value to delete from the binary tree: ");
+                System.out.print("Enter a value to delete from the binary Exercises.tree: ");
                 int deleteValue = scanner.nextInt();
                 scanner.nextLine(); // Consume the newline character
 
-                // Check if the value to delete exists in the tree
+                // Check if the value to delete exists in the Exercises.tree
                 // 检查要删除的值是否存在于树中
                 TreeNode nodeToDelete = search(root, deleteValue);
                 if (nodeToDelete == null) {
-                    System.out.println("Value " + deleteValue + " does not exist in the tree. Cannot delete.");
+                    System.out.println("Value " + deleteValue + " does not exist in the Exercises.tree. Cannot delete.");
                 } else {
                     root = delete(root, deleteValue);
-                    System.out.println("Value " + deleteValue + " deleted from the tree.");
+                    System.out.println("Value " + deleteValue + " deleted from the Exercises.tree.");
                 }
             } else {
                 try {
                     int value = Integer.parseInt(input);
                     root = insert(root, value);
-                    System.out.println("Value " + value + " added to the tree.");
+                    System.out.println("Value " + value + " added to the Exercises.tree.");
                 } catch (NumberFormatException e) {
                     System.out.println("Invalid input. Please enter a valid integer.");
                 }
             }
 
-            // Print the binary tree's inorder traversal result
+            // Print the binary Exercises.tree's inorder traversal result
             System.out.print("Current Binary Tree (Inorder traversal): ");
             inorderTraversal(root);
             System.out.println();
